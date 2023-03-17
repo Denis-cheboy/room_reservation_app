@@ -14,7 +14,7 @@ const PropertyList = () => {
   useEffect(()=>{
     const fetchProperties=async()=>{
         try{
-          const res=await axios.get("http://localhost:3500/api/hotels/type/countByType")
+          const res=await axios.get("https://room-reservation-api.onrender.com/hotels/type/countByType")
           setPropertyList(res.data)
         }
         catch(err){

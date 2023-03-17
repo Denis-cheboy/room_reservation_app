@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect,useState } from "react"
 
 const api=axios.create({
-    baseURL:"http://localhost:3500/api"
+    baseURL:"https://room-reservation-api.onrender.com"
 })
 const useFetch=(url)=>{
     const [data,setData]=useState([])

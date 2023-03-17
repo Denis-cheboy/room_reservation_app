@@ -40,7 +40,7 @@ const Reserve = ({setOpen,hotelId}) => {
   const handleClick=async()=>{
     try{
       await Promise.all(selectedRooms.map(roomId=>{
-        const res=axios.put(`http://localhost:3500/api/rooms/availability/${roomId}`,{allDates:allDates})
+        const res=axios.put(`https://room-reservation-api.onrender.com/rooms/availability/${roomId}`,{allDates:allDates})
         return res.data
       }))
       setOpen(false)

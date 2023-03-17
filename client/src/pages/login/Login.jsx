@@ -20,7 +20,7 @@ const Login = () => {
         e.preventDefault()
         dispatch({type:"LOIN_START"})
         try{
-            const res=await axios.post("http://localhost:3500/api/auth/login",credentials)
+            const res=await axios.post("https://room-reservation-api.onrender.com/api/auth/login",credentials)
             dispatch({type:"LOGIN_SUCCESS",payload:res.data})
             navigate("/")
         }

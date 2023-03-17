@@ -51,8 +51,7 @@ const Hotel = () => {
   }
 
   const handleClick=()=>{
-    console.log("Modal clicked")
-    console.log(user)
+   
     if(user){
        setOpenModal(true)
     }

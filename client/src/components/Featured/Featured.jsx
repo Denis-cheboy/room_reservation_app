@@ -10,7 +10,7 @@ const Featured = () => {
   useEffect(()=>{
      const fetchFeaturedCities=async()=>{
         try{
-          const res=await axios.get("http://localhost:3500/api/hotels/count/countByCity?cities=Sagana,Kagio,Karatina")
+          const res=await axios.get("https://room-reservation-api.onrender.com/hotels/count/countByCity?cities=Sagana,Kagio,Karatina")
           setData(res.data)
         }
         catch(err){

@@ -15,7 +15,7 @@ const FeaturedProperties = () => {
   useEffect(()=>{
     const fetchFeatured=async()=>{
         try{
-          const res=await axios.get("http://localhost:3500/api/hotels?featured=true&limit=4")
+          const res=await axios.get("https://room-reservation-api.onrender.com/hotels?featured=true&limit=4")
           setFeatured(res.data)
         }
         catch(err){
