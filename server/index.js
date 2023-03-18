@@ -25,10 +25,10 @@ app.use(express.json())
 app.use(cookieParser())
 
 // routes
-app.use("/api/users",userRoute)
-app.use("/api/hotels",hotelRoute)
-app.use("/api/rooms",roomRoute)
-app.use("/api/auth",authRoute)
+app.use("/users",userRoute)
+app.use("/hotels",hotelRoute)
+app.use("/rooms",roomRoute)
+app.use("/auth",authRoute)
 
 // error handler
 app.use(errorHandler)
